@@ -14,58 +14,84 @@
 }
 
 body{
-    background: #f4f4f4;
+    background: url(/image/fondo.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+}
+
+input::placeholder{
+    color: #fff;
 }
 
 /*TODO EL DIV*/
 .container{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 30px 40px;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 400px;
+    color: #fff;
 }
 
 /*EL TITULO*/
 .form-login h2{
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 .input-group{
     margin-bottom: 15px;
 }
 
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
 .input-group input{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 13px;
     font-size: 16px;
 
 }
 
+/*INPUT TRANSPARENTE*/
+
+.input-group input{
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+}
+
 .options{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
     font-size: 14px;
 }
 
 .options a{
-    color: var(--color-primario);
+    color: #fff;
     text-decoration: none;
     }
 
 .options a:hover{
     text-decoration: underline;
+}
+
+.options input{
+    cursor: pointer;
 }
 
 .btn{
@@ -77,8 +103,6 @@ body{
     border-radius: 13px;
     cursor: pointer;
     transition: background-color 0.3s;
-
-    
 }
 
 .btn:hover{
@@ -93,7 +117,7 @@ body{
 
 .register-link a{
     text-decoration: none;
-    color: var(--color-primario);
+    color: #fff;
 }
 
 .register-link a:hover{
