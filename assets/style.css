@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root{
+    --color-primario: #007bbf;
+}
+
 
 *{
     margin: 0;
@@ -56,7 +60,7 @@ body{
 }
 
 .options a{
-    color: #007bbf;
+    color: var(--color-primario);
     text-decoration: none;
     }
 
@@ -64,3 +68,42 @@ body{
     text-decoration: underline;
 }
 
+.btn{
+    width: 100%;
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+
+.register-link{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+
+}
+
+@media (max-width: 480px){
+
+    .container{
+        padding: 20px;
+    }
+}
